@@ -1,0 +1,14 @@
+{% if washroom_list %}
+    <ul>
+    {% for washroom in washroom_list %}
+        <li>{{ washroom.properties.opendata_id }}</li>
+        <li>{{ washroom.properties.alternative_name }}</li>
+        <li>{{ washroom.address }}</li>
+        <li>{{ washroom.geometry }}</li>
+        <li>{{ washroom.location }}</li>
+        <li>{{ washroom }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No locations are available.</p>
+{% endif %}

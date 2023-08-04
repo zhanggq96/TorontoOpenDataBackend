@@ -4,7 +4,6 @@ This project uses a React frontend and Django backend to visualize geographical 
 
 Works on Chrome and Firefox desktop.
 
-
 - Website Link: [http://35.183.91.143/](http://35.183.91.143/) (currently no domain name)
 - Frontend Repository: [https://github.com/zhanggq96/TorontoOpenData](https://github.com/zhanggq96/TorontoOpenData)
 - Backend Repository: [https://github.com/zhanggq96/TorontoOpenDataBackend](https://github.com/zhanggq96/TorontoOpenDataBackend)
@@ -13,7 +12,7 @@ Works on Chrome and Firefox desktop.
 
 ## Information
 
-The site is hosted on an instance of Amazon Lightsail and SQLite is used as the database, with plans to migrate to MongoDB in the future as the latest version of Amazon Linux (July 2023) does not support MongoDB. See the frontend repository for information about the frontend.
+The site is hosted on an instance of Amazon Lightsail. Data is fetched from toronto's open data api to populate an SQLite database, with plans to migrate to MongoDB in the future as the latest version of Amazon Linux (July 2023) does not support MongoDB. See the frontend repository for information about the frontend.
 
 Currently, only the [washroom facilities](https://open.toronto.ca/dataset/washroom-facilities/) dataset is supported.
 
@@ -23,6 +22,7 @@ Currently, only the [washroom facilities](https://open.toronto.ca/dataset/washro
   <li>Django==3.2.18</li>
   <li>djangorestframework==3.14.0</li>
   <li>django-cors-headers==4.1.0</li>
+  <li>requests</li>
 </ul> 
 
 ## API format for Map Data

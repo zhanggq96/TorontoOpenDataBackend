@@ -1,10 +1,16 @@
 # Toronto Open Data Backend
 
-Django backend for open data visualization. The backend serves the API for the react frontend at the endpoint /api/.
+Backend for open data visualization. The backend serves the API for the frontend at the endpoint /api/.
+Link: http://35.183.91.143/ (currently no domain name)
+Frontend Repository: https://github.com/zhanggq96/TorontoOpenData
+
+## Information
+
+This project uses a Django backend and a React frontend to visualize geographical data provided by the city of toronto. Leaflet is used to generate the map. Currently, only the [washroom facilities](https://open.toronto.ca/dataset/washroom-facilities/) dataset is supported with plans to expand in the future.
 
 ## API format for Map Data
 
-The main portion of this API follows the API provided by the City of Toronto. Example using washroom data:
+The main portion of this API follows the API provided by the City of Toronto. Example of format using one facility:
 
     {
         "data": [

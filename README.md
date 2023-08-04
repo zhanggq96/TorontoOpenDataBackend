@@ -1,13 +1,17 @@
 # Toronto Open Data Backend
 
-Backend for open data visualization. The backend serves the API for the frontend at the endpoint /api/.
+This project uses a React frontend and Django backend to visualize geographical data provided by the city of Toronto. The backend serves the API for the frontend at the endpoint /api/. <br>
 
-Link: http://35.183.91.143/ (currently no domain name) <br>
-Frontend Repository: https://github.com/zhanggq96/TorontoOpenData
+Works on Chrome and Firefox desktop.
+
+Website Link: http://35.183.91.143/ (currently no domain name) <br>
+Frontend Repository: https://github.com/zhanggq96/TorontoOpenData <br>
+Backend Repository: https://github.com/zhanggq96/TorontoOpenDataBackend <br>
+Toronto Open Data Site: https://www.toronto.ca/city-government/data-research-maps/open-data/
 
 ## Information
 
-This project uses a React frontend and Django backend to visualize geographical data provided by the city of toronto. Leaflet is used to generate the map. Currently, the project is hosted on an instance of Amazon Lightsail. SQLite is used as the database with plans to migrate to MongoDB in the future as the latest version of Amazon Linux (July 2023) does not support MongoDB. 
+The site is hosted on an instance of Amazon Lightsail and SQLite is used as the database, with plans to migrate to MongoDB in the future as the latest version of Amazon Linux (July 2023) does not support MongoDB. See the frontend repository for information about the frontend.
 
 Currently, only the [washroom facilities](https://open.toronto.ca/dataset/washroom-facilities/) dataset is supported.
 

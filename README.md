@@ -12,7 +12,7 @@ Works on Chrome and Firefox desktop.
 
 ## Information
 
-The site is hosted on an instance of Amazon Lightsail. Data is fetched from toronto's open data api to populate an SQLite database, with plans to migrate to MongoDB in the future as the latest version of Amazon Linux (July 2023) does not support MongoDB. See the frontend repository for information about the frontend.
+The site is hosted on an instance of Amazon Lightsail. Data is fetched from Toronto's open data api to populate an SQLite database, with plans to migrate to MongoDB in the future as the latest version of Amazon Linux (July 2023) does not support MongoDB. See the frontend repository for information about the frontend.
 
 Currently, only the [washroom facilities](https://open.toronto.ca/dataset/washroom-facilities/) dataset is supported.
 
@@ -51,8 +51,8 @@ The main portion of this API follows the API provided by the City of Toronto. Ex
                         "geometry": {
                             "type": "Point",
                             "coordinates": [
-                                43.7119805089016,
-                                -79.4461230209045
+                                43.7119805089016, # Lat
+                                -79.4461230209045 # Long
                             ]
                         }
                     },
